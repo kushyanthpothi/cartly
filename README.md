@@ -1,4 +1,4 @@
-# Chat Based Shopping Application
+# Cartly
 
 A Spring Boot application that provides chat-based shopping experience using the Model Context Protocol (MCP). This application enables AI agents and chatbots to interact naturally with an e-commerce platform, managing product catalog, user accounts, and shopping cart functionality through conversational interfaces. Built with Spring AI MCP integration, it allows seamless AI-powered shopping assistance through standardized tool endpoints.
 
