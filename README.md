@@ -259,7 +259,7 @@ When contributing to this project:
 
 ## License
 
-This project is currently unlicensed. Please contact the project maintainers for usage permissions.
+This project is currently licensed and this is only taken under permission of the user. 
 
 ## Support
 
