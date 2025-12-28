@@ -1,0 +1,23 @@
+spring:
+  ai:
+    mcp:
+      server:
+        enabled: true
+        type: SYNC
+        name: shopping-data-management
+        protocol: STREAMABLE
+        endpoint: /mcp
+      annotation-scanner:
+        enabled: true
+        base-package: com.tools.program.mcp
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_db
+    username: root
+    password: MyNewPass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show sql: true
+    properties:
+      hibernate:
+        format_sql: true
