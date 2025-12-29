@@ -20,6 +20,12 @@ public class UserController {
         return userService.createUsers(user);
     }
 
+    @GetMapping("/login")
+    public Users login(@RequestParam("email") String email, @RequestParam("password") String password){
+        Users user = userService.login(email, password);
+        return user;
+    }
+
     @GetMapping
     public List<Users> findAll(){
         return userService.getAllUsers();

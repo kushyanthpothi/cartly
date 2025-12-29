@@ -2,6 +2,7 @@ package com.tools.program.service;
 
 import com.tools.program.entity.Users;
 import com.tools.program.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,6 +32,15 @@ public class UserService {
         userRepository.deleteById(id);
 
         return user;
+    }
+
+    public Users login(String email, String password){
+        Users user = userRepository.findByEmail(email);
+
+        if(user!=null && user.getPassword().equals(password)){
+            return user;
+        }
+        return null;
     }
 
     public Users updateUserById(Long id,Users users){
